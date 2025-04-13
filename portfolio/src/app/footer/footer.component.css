@@ -1,0 +1,48 @@
+/* Background Gradient Animation */
+.footer-glow {
+  background: linear-gradient(135deg, #10103D, #14213D, #14213D);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Footer Text */
+.footer-text {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Glowing Button */
+.footer-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  background: linear-gradient(145deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 10px #00c6ff99;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 20px #00c6ffdd;
+}
+
+/* Icon Hover Effects */
+.footer-icon {
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #60a5fa;
+  transform: scale(1.2);
+}
+
+/* Keyframes */
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}

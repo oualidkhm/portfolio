@@ -1,0 +1,91 @@
+/* Profile Card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f0e6;
+  padding: 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 300px;
+  position: relative;
+  transition: opacity 1s ease-out;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #007bff;
+}
+
+/* Loading Indicator */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  font-size: 16px;
+  color: #3498db;
+  margin-top: 10px;
+  font-weight: bold;
+}

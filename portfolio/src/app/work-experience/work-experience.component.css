@@ -1,0 +1,79 @@
+/* Background Gradient Animation for Work Experience */
+.work-experience-section {
+  background-color: #0D152D;
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #E2E8F0;
+  position: relative;
+  z-index: 10;
+}
+
+/* Gradient Text for the title */
+.text-gradient {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Work Card Style */
+.work-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.work-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 204, 255, 0.2);
+}
+
+/* Work Card Image Styling */
+.work-card-image img {
+  object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 6px #38bdf8);
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-card-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Work Card Content Styling */
+.work-card-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+.work-card-content a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card-content a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.5);
+}
+
+/* Keyframes for Background Animation */
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}

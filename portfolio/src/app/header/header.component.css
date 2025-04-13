@@ -1,0 +1,90 @@
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Flex Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Navigation Section (Centered) */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Navigation List (Closer Links) */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px; /* Reduced space between the navigation items */
+}
+
+/* Navigation Links */
+.nav-link {
+  padding: 8px 16px; /* Smaller padding for closer links */
+  border-radius: 5px;
+  color: #F8FAFC;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s ease;
+}
+
+/* Hover Effects for Navigation Links */
+.nav-link:hover {
+  color: #1E293B;
+  background-color: #38BDF8;
+}
+
+/* Contact Me (Right) */
+nav .flex.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link i {
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+
+/* Resume Link Adjustment */
+.nav-link.resume-link {
+  flex-grow: 0; /* Prevents this link from growing and misaligning */
+  display: flex;
+  align-items: center;
+}
+
+/* Icon Size */
+.small-icon {
+  width: 3rem; /* 16px */
+  height: 3rem; /* 16px */
+  object-fit: cover; /* Ensures the image fits within the box without distortion */
+}
+
+/* Adjustments for icons or specific elements */
+.oualid {
+  margin-top: -20px;
+}

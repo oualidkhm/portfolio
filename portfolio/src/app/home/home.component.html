@@ -1,0 +1,20 @@
+<div *ngIf="showProfile;" class="profile-container" (click)="toggleView()">
+  <div class="profile-card">
+    <img src="../assets/meee.jpeg" alt="Profile Image" class="profile-img" />
+    <h2>Oualid KHMAICH</h2>
+    <p>CHEF DE PROJET</p>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- Sophisticated Loading Spinner -->
+  <div *ngIf="showProfile" class="loading-container">
+    <div class="spinner"></div>
+    <p> Welcome aboard! A space to showcase my journey in design and development</p>
+  </div>
+</div>
+

@@ -1,0 +1,31 @@
+<section class="work-experience-section py-20 relative z-10">
+  <div class="container mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold text-gradient mb-12 animate-fade-in"> Work Experience 💼</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div *ngFor="let experience of workExperiences" class="work-card animate-slide-up">
+        <div class="work-card-image">
+          <img [src]="experience.logoUrl" alt="{{ experience.companyName }} Logo" class="mx-auto" />
+        </div>
+        <div class="work-card-content bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-800">{{ experience.jobTitle }}</h3>
+          <p class="text-sm text-gray-500">{{ experience.companyName }} | {{ experience.period }}</p>
+          <p class="mt-4 text-gray-700">{{ experience.roleDescription }}</p>
+
+          <div class="mt-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Skills</h4>
+            <ul class="list-inline space-x-2 text-sm text-gray-600">
+              <li *ngFor="let skill of experience.skills" class="inline-block px-3 py-1 bg-indigo-100 rounded-full">{{ skill }}</li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-sm text-gray-500"><strong>Impact:</strong> {{ experience.impact }}</p>
+          </div>
+
+          <a *ngIf="experience.link" [href]="experience.link" target="_blank" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

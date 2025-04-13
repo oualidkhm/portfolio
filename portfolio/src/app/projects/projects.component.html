@@ -1,0 +1,25 @@
+<div id="projects" class="projects-container">
+  <h2 class="text-4xl font-bold text-cyan-400 mb-12 animate-fade-in"> Projects 💡 </h2>  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" [alt]="project.title">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+      <div class="project-details">
+        <strong>Members:</strong> {{ project.members.join(', ') }} <br>
+        <strong>Tools:</strong> {{ project.tools.join(', ') }}
+      </div>
+      <button (click)="openVideo(project.video)">▶ Watch Demo</button>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="video-modal" *ngIf="selectedVideo">
+    <div class="video-content">
+      <span class="close-btn" (click)="closeVideo()">×</span>
+      <video controls autoplay>
+        <source [src]="selectedVideo" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
