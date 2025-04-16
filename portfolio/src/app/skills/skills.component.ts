@@ -13,13 +13,13 @@ import {NgForOf, NgOptimizedImage} from '@angular/common';
 })
 export class SkillsComponent {
    skills = [
-    { name: 'Web Development', image: '../assets/html5.png', description: ' Angular | Spring Boot' },
-    { name: 'Machine Learning', image: '../assets/html5.png', description: 'Model training, deployment (streamlit), Python (fastAPI,Flask)' },
-    { name: 'Cloud & DevOps', image: '../assets/html5.png', description: 'Kubernetes, Docker, CI/CD, AWS' },
-    { name: 'JavaScript', image: '../assets/html5.png', description: 'For web interactivity' },
-    { name: 'Python', image: '../assets/html5.png', description: 'Data science, machine learning' },
-    { name: 'Docker', image: '../assets/html5.png', description: 'Containerization platform' },
-    { name: 'Kubernetes', image: '../assets/html5.png', description: 'Container orchestration' },
-    { name: 'AWS', image: '../assets/html5.png', description: 'Scalable cloud services platform' }
+    { name: 'Web Development', image: '../assets/devweb.png', description: ' Angular | Spring Boot }| HTML and CSS | JAVA ' },
+    { name: 'Machine Learning', image: '../assets/ml.png', description: 'Model training, deployment (streamlit), Python (fastAPI,Flask)' },
+    { name: 'Cloud & DevOps', image: '../assets/clouddevops.png', description: 'Kubernetes, Docker, CI/CD, AWS' },
+    { name: 'JavaScript and data structures', image: '../assets/js.png', description: 'For web interactivity' },
+    { name: 'Python and streamlit', image: '../assets/strpy.png', description: 'Data science, machine learning' },
+    { name: 'Docker', image: '../assets/docker.png', description: 'Containerization platform' },
+    { name: 'Kubernetes', image: '../assets/kubernetes.png', description: 'Container orchestration' },
+    { name: 'AWS', image: '../assets/aws.png', description: 'Scalable cloud services platform' }
   ];
 }
