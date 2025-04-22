@@ -25,7 +25,7 @@ export class ProjectsComponent {
       title: 'IA – Détection de maladies (Diabète, Cœur)',
       description: 'Modèle IA pour la prédiction de maladies chroniques.',
       image: '../assets/diaheart.png',
-      video: '../assets/v3.mp4',
+      video: '../assets/thales.png',
       members: ['Toi'],
       tools: ['Python', 'Scikit-learn', 'Pandas', 'Jupyter']
     },
@@ -33,7 +33,7 @@ export class ProjectsComponent {
       title: 'E-blog intelligent avec recommandation IA',
       description: 'Blog avec moteur de recommandation d’articles personnalisé.',
       image: '../assets/eblog.png',
-      video: '../assets/v3.mp4',
+      video: '../assets/thales.png',
       members: ['Toi'],
       tools: ['Angular', 'Python', 'Flask', 'Machine Learning']
     },
@@ -41,7 +41,7 @@ export class ProjectsComponent {
       title: 'Plateforme étudiants-lauréats avec IA de filtrage de CV',
       description: 'Application de mise en relation avec UI/UX, IA et frontend Angular.',
       image: '../assets/laureat.png',
-      video: '../assets/v3.mp4',
+      video: '../assets/thales.png',
       members: ['Toi', 'Camarade 1', 'Camarade 2'],
       tools: ['Angular', 'Spring Boot', 'Python', 'Figma']
     },
@@ -49,7 +49,7 @@ export class ProjectsComponent {
       title: 'Assistant vocal – Stage OCP 2024',
       description: 'Assistant vocal pour automatiser les tâches répétitives.',
       image: '../assets/assistant.png',
-      video: '../assets/v3.mp4',
+      video: '../assets/thales.png',
       members: ['Toi'],
       tools: ['Python', 'SpeechRecognition', 'Flask']
     },
@@ -57,9 +57,9 @@ export class ProjectsComponent {
       title: 'Application de réservation de tickets en C',
       description: 'Application en C développée en équipe pour la gestion de tickets.',
       image: '../assets/cc.png',
-      video: '../assets/v3.mp4',
+      video: '../assets/thales.png',
       members: ['Toi', '3 membres'],
-      tools: ['C', 'Makefile']
+      tools: ['C', 'UML']
     }
   ];
 

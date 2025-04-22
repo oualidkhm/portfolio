@@ -27,28 +27,53 @@ interface WorkExperience {
 export class WorkExperienceComponent {
   workExperiences: WorkExperience[] = [
     {
-      logoUrl: '../assets/html5.png',
-      jobTitle: 'Full-Stack Developer',
-      companyName: 'Tech Innovations Inc.',
-      period: 'Jan 2020 - Present',
-      roleDescription: 'Developing and maintaining scalable web applications.',
-      projects: ['Project A (React, Node.js)', 'Project B (Angular, Firebase)'],
-      impact: 'Improved performance by 40%',
-      skills: ['Angular', 'Node.js', 'JavaScript'],
-      testimonial: '“An excellent developer who always exceeds expectations.” – John Doe, CEO',
-      link: 'https://github.com/username/projectA'
+      logoUrl: '../assets/thales.png',
+      jobTitle: 'DevOps & Cloud Intern',
+      companyName: 'Thales (France)',
+      period: '2025 (en cours)',
+      roleDescription: 'Participation à un projet cloud avec intégration de pratiques DevOps, sécurité et automatisation.',
+      projects: ['Projet Cloud & DevOps (Kubernetes, Docker)', 'Automatisation CI/CD'],
+      impact: 'Amélioration de l’intégration continue et déploiement sécurisé.',
+      skills: ['Cloud', 'DevOps', 'Docker', 'Sécurité', 'Automation'],
+      testimonial: '“Un jeune ingénieur très curieux et impliqué dans l’innovation.”',
+      link: 'https://oualidkhmaich.vercel.app/'
     },
     {
-      logoUrl: '../assets/html5.png',
-      jobTitle: 'Software Engineer',
-      companyName: 'Creative Solutions',
-      period: 'Jun 2018 - Dec 2019',
-      roleDescription: 'Worked on building cloud-based services and APIs.',
-      projects: ['Project X (AWS, Docker)', 'Project Y (Go, MongoDB)'],
-      impact: 'Reduced system downtimes by 25%',
-      skills: ['AWS', 'Docker', 'Go'],
-      testimonial: '“A talented engineer with exceptional problem-solving skills.” – Jane Smith, CTO',
-      link: 'https://github.com/username/projectX'
+      logoUrl: '../assets/assistant.png',
+      jobTitle: 'IA Intern',
+      companyName: 'OCP Group',
+      period: 'Été 2024',
+      roleDescription: 'Création d’un assistant vocal pour automatiser des tâches répétitives.',
+      projects: ['Assistant Vocal (Speech Recognition, Python)'],
+      impact: 'Réduction du temps de traitement pour les tâches récurrentes.',
+      skills: ['Python', 'IA', 'Automatisation'],
+      testimonial: '“Oualid a proposé des solutions innovantes pour les besoins internes.”',
+      link: 'https://oualidkhmaich.vercel.app/'
+    },
+    {
+      logoUrl: '../assets/diaheart.png',
+      jobTitle: 'AI Developer',
+      companyName: 'Projet Personnel EMI',
+      period: '2024',
+      roleDescription: 'Développement d’un modèle IA pour détecter le diabète et les maladies cardiaques.',
+      projects: ['Modèle de classification (Sklearn, Pandas, Matplotlib)'],
+      impact: 'Amélioration de la précision de détection des maladies.',
+      skills: ['Machine Learning', 'Python', 'Pandas'],
+      testimonial: '“Un projet médical très prometteur au service de la prévention.”',
+      link: 'https://oualidkhmaich.vercel.app/'
+    },
+    {
+      logoUrl: '../assets/laureat.png',
+      jobTitle: 'Fullstack & AI Developer',
+      companyName: 'Projet Étudiant EMI',
+      period: '2024',
+      roleDescription: 'Développement d’une plateforme étudiants-lauréats avec filtrage de CV basé sur IA.',
+      projects: ['Plateforme Web (Angular, Spring Boot)', 'IA de filtrage (FastAPI)'],
+      impact: 'Optimisation du recrutement étudiant grâce à l’IA.',
+      skills: ['Angular', 'Spring Boot', 'FastAPI', 'Figma'],
+      testimonial: '“Un travail structuré et très pertinent dans le domaine du recrutement.”',
+      link: 'https://oualidkhmaich.vercel.app/'
     }
   ];
+
 }

@@ -23,28 +23,45 @@ interface Certificate {
 export class CertificatesComponent {
   certificates: Certificate[] = [
     {
-      certificateImg: '../assets/linux.png',
-      title: 'Certified Kubernetes Administrator',
-      date: 'May 2023',
-      organization: 'Cloud Native Computing Foundation',
-      description: 'Validated expertise in Kubernetes administration.',
-      link: 'https://www.cncf.io/certification/kubernetes-administrator/'
+      certificateImg: '../assets/ds.png',
+      title: 'What is Data Science?',
+      date: '2024',
+      organization: 'IBM (Coursera)',
+      description: 'Introduction aux concepts clés de la Data Science.',
+      link: 'https://www.coursera.org/learn/what-is-datascience'
     },
     {
-      certificateImg: '../assets/aws.jpeg',
-      title: 'AWS Certified Solutions Architect',
-      date: 'August 2022',
-      organization: 'Amazon Web Services',
-      description: 'Demonstrated skills in designing distributed systems on AWS.',
-      link: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/'
+      certificateImg: '../assets/ibm.png',
+      title: 'Data Science Tools',
+      date: '2024',
+      organization: 'IBM (Coursera)',
+      description: 'Présentation des outils utilisés en Data Science.',
+      link: 'https://www.coursera.org/learn/data-science-tools'
     },
     {
-      certificateImg: '../assets/linux.png',
-      title: 'Google Professional Cloud Architect',
-      date: 'January 2021',
-      organization: 'Google Cloud',
-      description: 'Proven ability to design and manage cloud solutions on Google Cloud.',
-      link: 'https://cloud.google.com/certification/cloud-architect'
+      certificateImg: '../assets/meth.png',
+      title: 'Data Science Methodology',
+      date: '2024',
+      organization: 'IBM (Coursera)',
+      description: 'Méthodologies pour les projets de Data Science.',
+      link: 'https://www.coursera.org/learn/data-science-methodology'
+    },
+    {
+      certificateImg: '../assets/fccc.png',
+      title: 'Responsive Web Design',
+      date: '2023',
+      organization: 'freeCodeCamp',
+      description: 'Compétences en HTML, CSS, Flexbox et design responsive.',
+      link: 'https://www.freecodecamp.org/certification'
+    },
+    {
+      certificateImg: '../assets/sl.png',
+      title: 'Machine Learning',
+      date: '2023',
+      organization: 'Simplilearn',
+      description: 'Introduction aux algorithmes de Machine Learning.',
+      link: 'https://www.simplilearn.com'
     }
   ];
+
 }
