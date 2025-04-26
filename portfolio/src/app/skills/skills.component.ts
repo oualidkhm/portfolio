@@ -13,7 +13,7 @@ import {NgForOf, NgOptimizedImage} from '@angular/common';
 })
 export class SkillsComponent {
    skills = [
-    { name: 'Web Development', image: '../assets/devweb.png', description: ' Angular | Spring Boot }| HTML and CSS | JAVA ' },
+    { name: 'Web Development', image: '../assets/devweb.png', description: ' Angular | Spring Boot | HTML and CSS | JAVA ' },
     { name: 'Machine Learning', image: '../assets/ml.png', description: 'Model training, deployment (streamlit), Python (fastAPI,Flask)' },
     { name: 'Cloud & DevOps', image: '../assets/clouddevops.png', description: 'Kubernetes, Docker, CI/CD, AWS' },
     { name: 'JavaScript and data structures', image: '../assets/js.png', description: 'For web interactivity' },
