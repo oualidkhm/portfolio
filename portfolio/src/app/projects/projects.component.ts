@@ -57,7 +57,7 @@ export class ProjectsComponent {
       title: 'Application de réservation de tickets en C',
       description: 'Application en C développée en équipe pour la gestion de tickets.',
       image: '../assets/cc.png',
-      video: '../assets/notyet.mp4',
+      video: '../assets/C_p_.mp4',
       members: ['moi', '3 membres'],
       tools: ['C', 'UML']
     }
