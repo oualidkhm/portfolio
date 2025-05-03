@@ -10,9 +10,16 @@
         <li><a href="#skills" class="text-white hover:text-[#2FE799] transition">Skills</a></li>
         <li><a href="#projects" class="text-white hover:text-[#2FE799] transition">Projects</a></li>
         <li>
-          <a href="../assets/english_french_CV.pdf" download class="text-white hover:text-[#2FE799] transition">
-            Resume <i class="oualid fas fa-download"></i>
-          </a>
+          <div class="relative inline-block text-left">
+            <button (click)="toggleDropdown()" class="text-white hover:text-[#2FE799] transition focus:outline-none">
+              Resume <i class="oualid fas fa-download"></i>
+            </button>
+            <div *ngIf="dropdownOpen" class="absolute mt-2 w-40 rounded-md shadow-lg bg-gray-800 z-10">
+              <a href="../assets/Francais_cv_oualidKHMAICH.pdf" download class="block px-4 py-2 text-white hover:bg-[#2FE799]">Français</a>
+              <a href="../assets/English_cv_oualidKHMAICH.pdf" download class="block px-4 py-2 text-white hover:bg-[#2FE799]">English</a>
+            </div>
+          </div>
+
         </li>
       </ul>
     </nav>

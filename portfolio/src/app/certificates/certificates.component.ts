@@ -21,6 +21,18 @@ interface Certificate {
   styleUrls: ['./certificates.component.css']
 })
 export class CertificatesComponent {
+
+  selectedCertificate: string | null = null;
+
+  showCertificate(img: string) {
+    this.selectedCertificate = img;
+  }
+
+  closeCertificate() {
+    this.selectedCertificate = null;
+  }
+
+
   certificates: Certificate[] = [
     {
       certificateImg: '../assets/ds.png',
@@ -28,7 +40,7 @@ export class CertificatesComponent {
       date: '2024',
       organization: 'IBM (Coursera)',
       description: 'Introduction aux concepts clés de la Data Science.',
-      link: 'https://www.coursera.org/learn/what-is-datascience'
+      link: '../assets/dsc.png'
     },
     {
       certificateImg: '../assets/ibm.png',
@@ -36,7 +48,7 @@ export class CertificatesComponent {
       date: '2024',
       organization: 'IBM (Coursera)',
       description: 'Présentation des outils utilisés en Data Science.',
-      link: 'https://www.coursera.org/learn/data-science-tools'
+      link: '../assets/toolsc.png'
     },
     {
       certificateImg: '../assets/meth.png',
@@ -44,7 +56,7 @@ export class CertificatesComponent {
       date: '2024',
       organization: 'IBM (Coursera)',
       description: 'Méthodologies pour les projets de Data Science.',
-      link: 'https://www.coursera.org/learn/data-science-methodology'
+      link: '../assets/methc.png'
     },
     {
       certificateImg: '../assets/fccc.png',
@@ -52,7 +64,7 @@ export class CertificatesComponent {
       date: '2023',
       organization: 'freeCodeCamp',
       description: 'Compétences en HTML, CSS, Flexbox et design responsive.',
-      link: 'https://www.freecodecamp.org/certification'
+      link: '../assets/responsive web design.png'
     },
     {
       certificateImg: '../assets/sl.png',
@@ -60,7 +72,7 @@ export class CertificatesComponent {
       date: '2023',
       organization: 'Simplilearn',
       description: 'Introduction aux algorithmes de Machine Learning.',
-      link: 'https://www.simplilearn.com'
+      link: '../assets/slc.png'
     }
   ];
 
