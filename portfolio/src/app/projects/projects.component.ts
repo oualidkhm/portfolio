@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForOf, NgIf} from '@angular/common';
+import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +13,14 @@ import {NgForOf, NgIf} from '@angular/common';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  projects = [
+  projects = [{
+    title: 'Plateforme NLP – Analyse de sentiments',
+    description: 'Projet complet NLP avec interface Angular, API Flask, journalisation Spring Boot et Docker.',
+    image: '../assets/nlp.png',
+    video: 'https://youtu.be/FECMKpTLmjw',
+    members: ['moi'],
+    tools: ['Angular', 'Flask', 'Spring Boot', 'Python', 'Docker', 'MySQL','NLP']
+  },
     {
       title: 'Projet Thales – Cloud, DevOps & Sécurité',
       description: 'Stage alterné chez Thales : Cloud, DevOps, sécurité et automatisation.',
@@ -65,12 +73,32 @@ export class ProjectsComponent {
 
 
   selectedVideo: string | null = null;
+  safeVideoUrl: SafeResourceUrl | null = null;
+
+  constructor(private sanitizer: DomSanitizer) {}
 
   openVideo(videoUrl: string) {
     this.selectedVideo = videoUrl;
+    if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+      // Extract video ID and convert to embed URL
+      let videoId = '';
+      if (videoUrl.includes('youtu.be')) {
+        videoId = videoUrl.split('/').pop()!;
+      } else if (videoUrl.includes('watch?v=')) {
+        videoId = videoUrl.split('watch?v=')[1].split('&')[0];
+      }
+      const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+      this.safeVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+    } else {
+      this.safeVideoUrl = null; // local video
+    }
   }
+
 
   closeVideo() {
     this.selectedVideo = null;
   }
 }
+
+
+

@@ -34,6 +34,41 @@ export class CertificatesComponent {
 
 
   certificates: Certificate[] = [
+    // ---------- Nouvelles certifications ----------
+    {
+      certificateImg: '../assets/digital.png',
+      title: 'Digital Transformation',
+      date: 'Nov 2025',
+      organization: 'Boston Consulting Group (BCG)',
+      description: ' Digital Strategy & Innovation · Business & Technology Alignment · Data-Driven Decision Making',
+      link: '../assets/digital1.png'
+    },
+    {
+      certificateImg: '../assets/mll.png',
+      title: 'Machine Learning Specialization',
+      date: 'Oct 2025',
+      organization: 'DeepLearning.AI',
+      description: 'Artificial Intelligence (AI) · Machine Learning · Data Science',
+      link: '../assets/mll1.png'
+    },
+    {
+      certificateImg: '../assets/cnnn.png',
+      title: 'Convolutional Neural Networks',
+      date: 'Sep 2025',
+      organization: 'DeepLearning.AI',
+      description: 'Image Processing · Computer Vision · Keras · TensorFlow',
+      link: 'assets/cnnn1.png'
+    },
+    {
+      certificateImg: '../assets/ndl.png',
+      title: 'Neural Networks and Deep Learning',
+      date: 'Jul 2025',
+      organization: 'DeepLearning.AI',
+      description: ' Neural Networks · Gradient Descent · Neural Network Architecture Design',
+      link: '../assets/ndl1.png'
+    },
+
+    // ---------- Certifs existantes ----------
     {
       certificateImg: '../assets/ds.png',
       title: 'What is Data Science?',
@@ -75,5 +110,6 @@ export class CertificatesComponent {
       link: '../assets/slc.png'
     }
   ];
+
 
 }
