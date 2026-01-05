@@ -14,59 +14,59 @@ import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 })
 export class ProjectsComponent {
   projects = [{
-    title: 'Plateforme NLP – Analyse de sentiments',
-    description: 'Projet complet NLP avec interface Angular, API Flask, journalisation Spring Boot et Docker.',
+    title: 'NLP Platform – Sentiment Analysis',
+    description: 'End-to-end NLP project with Angular interface, Flask API, Spring Boot logging, and Docker.',
     image: '../assets/nlp.png',
     video: 'https://youtu.be/FECMKpTLmjw',
-    members: ['moi'],
+    members: ['me'],
     tools: ['Angular', 'Flask', 'Spring Boot', 'Python', 'Docker', 'MySQL','NLP']
   },
     {
-      title: 'Projet Thales – Cloud, DevOps & Sécurité',
-      description: 'Stage alterné chez Thales : Cloud, DevOps, sécurité et automatisation.',
+      title: 'Thales Project – Cloud, DevOps & Security',
+      description: 'Apprenticeship at Thales focused on Cloud, DevOps, security, and automation.',
       image: '../assets/thales.png',
       video: '../assets/notyet.mp4',
-      members: ['moi'],
+      members: ['me'],
       tools: ['Terraform', 'GitLab CI/CD', 'Docker', 'Ansible']
     },
     {
-      title: 'IA – Détection de maladies (Diabète, Cœur)',
-      description: 'Modèle IA pour la prédiction de maladies chroniques.',
+      title: 'AI – Disease Detection (Diabetes, Heart)',
+      description: 'AI model for predicting chronic diseases.',
       image: '../assets/diaheart.png',
       video: '../assets/appML.mp4',
-      members: ['moi'],
+      members: ['me'],
       tools: ['Python', 'Scikit-learn', 'Pandas', 'Jupyter']
     },
     {
-      title: 'E-blog intelligent avec recommandation IA',
-      description: 'Blog avec moteur de recommandation d’articles personnalisé.',
+      title: 'Smart E-Blog with AI Recommendations',
+      description: 'Blog platform with a personalized article recommendation engine.',
       image: '../assets/eblog.png',
       video: '../assets/notyet.mp4',
-      members: ['moi'],
+      members: ['me'],
       tools: ['Angular', 'Python', 'Flask', 'Machine Learning']
     },
     {
-      title: 'Plateforme étudiants-lauréats avec IA de filtrage de CV',
-      description: 'Application de mise en relation avec UI/UX, IA et frontend Angular.',
+      title: 'Student–Graduate Platform with AI CV Filtering',
+      description: 'Networking platform with UI/UX design, AI-based CV filtering, and Angular frontend.',
       image: '../assets/laureat.png',
       video: '../assets/notyet.mp4',
-      members: ['moi', '3 membres'],
+      members: ['me', '3 members'],
       tools: ['Angular', 'Spring Boot', 'Python', 'Figma']
     },
     {
-      title: 'Assistant vocal – Stage OCP 2024',
-      description: 'Assistant vocal pour automatiser les tâches répétitives.',
+      title: 'Voice Assistant – OCP Internship 2024',
+      description: 'Voice assistant designed to automate repetitive tasks.',
       image: '../assets/assistant.png',
       video: '../assets/notyet.mp4',
-      members: ['moi'],
+      members: ['me'],
       tools: ['Python', 'SpeechRecognition', 'Flask']
     },
     {
-      title: 'Application de réservation de tickets en C',
-      description: 'Application en C développée en équipe pour la gestion de tickets.',
+      title: 'Ticket Reservation Application in C',
+      description: 'Team-developed C application for ticket management.',
       image: '../assets/cc.png',
       video: '../assets/C_p_.mp4',
-      members: ['moi', '3 membres'],
+      members: ['me', '3 members'],
       tools: ['C', 'UML']
     }
   ];
